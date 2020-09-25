@@ -1,0 +1,14 @@
+USE wm;
+
+SELECT * FROM ESTADOS;
+
+SELECT Sigla, NOME AS 'Nome do Estado' FROM ESTADOS
+WHERE REGIAO = 'Sul';
+
+SELECT
+	Nome,
+    Regiao,
+    Populacao
+FROM ESTADOS
+WHERE POPULACAO >= 10
+ORDER BY POPULACAO DESC;
