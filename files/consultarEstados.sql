@@ -1,5 +1,3 @@
-USE wm;
-
 SELECT * FROM ESTADOS;
 
 SELECT Sigla, NOME AS 'Nome do Estado' FROM ESTADOS
