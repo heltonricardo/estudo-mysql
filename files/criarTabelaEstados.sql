@@ -1,12 +1,12 @@
 -- Criando a tabela Estado
 
 CREATE TABLE ESTADOS (
-    id INT UNSIGNED NOT NULL AUTO_INCREMENT,
-    nome VARCHAR(45) NOT NULL,
-    sigla VARCHAR(2) NOT NULL,
-    regiao ENUM('Norte', 'Nordeste', 'Centro-Oeste', 'Sudeste', 'Sul') NOT NULL,
-    populacao DECIMAL(5,2) NOT NULL,
-    PRIMARY KEY (id),
-    UNIQUE KEY (nome),
-    UNIQUE KEY (sigla)
+    ID INT UNSIGNED NOT NULL AUTO_INCREMENT,
+    NOME VARCHAR(45) NOT NULL,
+    SIGLA VARCHAR(2) NOT NULL,
+    REGIAO ENUM('Norte', 'Nordeste', 'Centro-Oeste', 'Sudeste', 'Sul') NOT NULL,
+    POPULACAO DECIMAL(5,2) NOT NULL,
+    PRIMARY KEY (ID),
+    UNIQUE KEY (NOME),
+    UNIQUE KEY (SIGLA)
 );
