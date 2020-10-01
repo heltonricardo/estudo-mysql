@@ -1,0 +1,16 @@
+INSERT INTO PREFEITOS
+	(NOME, CIDADE_ID)
+VALUES
+	('Rodrigo Neves', 2),
+    ('Raquel Lyra', 3),
+    ('Zenaldo Coutinho', NULL);
+    
+SELECT * FROM PREFEITOS;
+
+-- ERRO DE CHAVE ÚNICA:
+INSERT INTO PREFEITOS (NOME, CIDADE_ID)
+VALUES ('Rodrigo Pinheiro', 3);
+
+-- NÃO HÁ ERRO DE CHAVE ÚNICA COM NULL:
+INSERT INTO PREFEITOS (NOME)
+VALUES ('Rafael Greca');
